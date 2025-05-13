@@ -12,7 +12,17 @@ I have attached the CSV files of Sales data
 
 # SQL Queries and Scripts
 1..Import date to MYSQL workbench
---       
+--  Create a databse named data_analysis_project
+Create database Data_Analysis_Project;
+
+-- use teh database to upload the sales details available in CSV file
+use Data_Analysis_Project;     
+
+-- left click and Table data import wizard,browse the path for which files available,select file and click "next" ,select "Create new Table" if you want to continue with same data structres or else you create the new table 
+example i have created my own datatypes and contraints 
+
+Create table Orders(order_id int not null primary key,order_date date not null,order_time time not null);
+
 
 # Visualizations (Power BI/Excel)
 # Insights and Reports
